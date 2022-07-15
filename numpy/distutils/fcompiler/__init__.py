@@ -743,7 +743,7 @@ _default_compilers = (
     ('win32', ('gnu', 'intelv', 'absoft', 'compaqv', 'intelev', 'gnu95', 'g95',
                'intelvem', 'intelem', 'flang')),
     ('cygwin.*', ('gnu', 'intelv', 'absoft', 'compaqv', 'intelev', 'gnu95', 'g95')),
-    ('linux.*', ('arm', 'gnu95', 'intel', 'lahey', 'pg', 'nv', 'absoft', 'nag',
+    ('linux.*', ('llvm', 'arm', 'gnu95', 'intel', 'lahey', 'pg', 'nv', 'absoft', 'nag',
                  'vast', 'compaq', 'intele', 'intelem', 'gnu', 'g95', 
                  'pathf95', 'nagfor', 'fujitsu')),
     ('darwin.*', ('gnu95', 'nag', 'nagfor', 'absoft', 'ibm', 'intel', 'gnu',
@@ -752,7 +752,7 @@ _default_compilers = (
     ('irix.*', ('mips', 'gnu', 'gnu95',)),
     ('aix.*', ('ibm', 'gnu', 'gnu95',)),
     # os.name mappings
-    ('posix', ('gnu', 'gnu95',)),
+    ('posix', ('llvm', 'gnu', 'gnu95',)),
     ('nt', ('gnu', 'gnu95',)),
     ('mac', ('gnu95', 'gnu', 'pg')),
     )

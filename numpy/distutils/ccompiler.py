@@ -706,6 +706,8 @@ compiler_class['intelw'] = ('intelccompiler', 'IntelCCompilerW',
                             "Intel C Compiler for 32-bit applications on Windows")
 compiler_class['intelemw'] = ('intelccompiler', 'IntelEM64TCCompilerW',
                               "Intel C Compiler for 64-bit applications on Windows")
+compiler_class['llvm'] = ('llvmccompiler', 'LLVMCCompiler',
+                            "LLVM C Compiler (clang)")
 compiler_class['pathcc'] = ('pathccompiler', 'PathScaleCCompiler',
                             "PathScale Compiler for SiCortex-based applications")
 compiler_class['arm'] = ('armccompiler', 'ArmCCompiler',
@@ -714,6 +716,7 @@ compiler_class['arm'] = ('armccompiler', 'ArmCCompiler',
 ccompiler._default_compilers += (('linux.*', 'intel'),
                                  ('linux.*', 'intele'),
                                  ('linux.*', 'intelem'),
+                                 ('linux.*', 'llvm'),
                                  ('linux.*', 'pathcc'),
                                  ('nt', 'intelw'),
                                  ('nt', 'intelemw'))
